@@ -5,20 +5,20 @@
 class Substrate < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bkeane/substrate/releases/download/0.0.1/substrate_Darwin_x86_64.tar.gz"
-      sha256 "e3cc55d35983c815a9790d17fe90487f459d984e13fe5c641720e8180d13e426"
+      url "https://github.com/bkeane/substrate/releases/download/v0.0.2/substrate_Darwin_x86_64.tar.gz"
+      sha256 "7945229e104b72aba0a7d211c6a44735e187da79d9f2d217d465b025c3fa8326"
 
       def install
         bin.install "substrate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bkeane/substrate/releases/download/0.0.1/substrate_Darwin_arm64.tar.gz"
-      sha256 "09cbdf7778245eb1dbdac60cfe4d2dbee87469b66af4d733f3072be2f1e28ef5"
+      url "https://github.com/bkeane/substrate/releases/download/v0.0.2/substrate_Darwin_arm64.tar.gz"
+      sha256 "99a4f0d9f8028abcd09629cbd92d3c3d12e371b16ec703ac5aae4e6a2469d8a3"
 
       def install
         bin.install "substrate"
@@ -29,8 +29,8 @@ class Substrate < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bkeane/substrate/releases/download/0.0.1/substrate_Linux_x86_64.tar.gz"
-        sha256 "d10c78cb8a10e0b1103d808ce3058466f367969bbd041b011e93e982d61e4d72"
+        url "https://github.com/bkeane/substrate/releases/download/v0.0.2/substrate_Linux_x86_64.tar.gz"
+        sha256 "57e120b27ba3f14239a443df3b04643b6d510c4f3721b9fb4e0341110ce4e4ae"
 
         def install
           bin.install "substrate"
@@ -39,8 +39,8 @@ class Substrate < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bkeane/substrate/releases/download/0.0.1/substrate_Linux_arm64.tar.gz"
-        sha256 "365417d3c6207ef1e0abbe287f26c6ccd1b1c353fe42b3c1abdd5c2838fe7e7e"
+        url "https://github.com/bkeane/substrate/releases/download/v0.0.2/substrate_Linux_arm64.tar.gz"
+        sha256 "65fc79588fbcff7733eb878959eede8c4a93895962bfcdbdacb310a779468c69"
 
         def install
           bin.install "substrate"
