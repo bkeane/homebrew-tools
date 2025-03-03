@@ -10,7 +10,7 @@ class Monad < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bkeane/monad/releases/download/v0.0.3/monad_Darwin_x86_64.tar.gz"
-      sha256 "d1aacb56a57ce909b4c57a5a4fe54cfe2e3cdccdfcc4d4fa107494b7d0526e26"
+      sha256 "b147fb2ab85ebd0a49e623494cd813f02c633525968f48d32c0a2f6786132c6c"
 
       def install
         bin.install "monad"
@@ -18,7 +18,7 @@ class Monad < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bkeane/monad/releases/download/v0.0.3/monad_Darwin_arm64.tar.gz"
-      sha256 "77c55f9309011a7f9b88fa739bcf7749164e0f1265335ee0373ca76a2c1b5ac8"
+      sha256 "677777a2829302ba2938a1fd98b0e417d9ac0d27c1769060002f471d0ac3598f"
 
       def install
         bin.install "monad"
@@ -30,7 +30,7 @@ class Monad < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/bkeane/monad/releases/download/v0.0.3/monad_Linux_x86_64.tar.gz"
-        sha256 "c60e23de6cf2da2215294baefb8989dd01e5665c0569493d611a539db0e8765d"
+        sha256 "5a1f650ce57a13157430666eb5d1eb1410c425ab828a1d375a527fd5318e5e39"
 
         def install
           bin.install "monad"
@@ -40,7 +40,7 @@ class Monad < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/bkeane/monad/releases/download/v0.0.3/monad_Linux_arm64.tar.gz"
-        sha256 "7923a6dd249a5be56290a98a021a264d331c3e029654c79540b9e56904bd3954"
+        sha256 "8311d2d7719bceafe33671e0819ff8b75e513c2158a4cf29e2280c0b9808427a"
 
         def install
           bin.install "monad"
