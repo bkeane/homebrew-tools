@@ -5,20 +5,20 @@
 class Monad < Formula
   desc ""
   homepage ""
-  version "0.0.11"
+  version "0.0.14"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bkeane/monad/releases/download/v0.0.11/monad_Darwin_x86_64.tar.gz"
-      sha256 "008213add0e0ac26ea6587f8bae445b610d6527af36123b6f265403f0ba3e7c4"
+      url "https://github.com/bkeane/monad/releases/download/v0.0.14/monad_Darwin_x86_64.tar.gz"
+      sha256 "120e5780684e9be47a464d5e89e79f1187d71be1cb9f9e6c16e7ce088825bf6b"
 
       def install
         bin.install "monad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bkeane/monad/releases/download/v0.0.11/monad_Darwin_arm64.tar.gz"
-      sha256 "edee77919f4a8e62216d2df39c8bb70fdf4d68902d9457d4e4b23c6259e59273"
+      url "https://github.com/bkeane/monad/releases/download/v0.0.14/monad_Darwin_arm64.tar.gz"
+      sha256 "96758fe9b79fc58cbe05ccc12cd72104b9be8f8c8511eb18ebf8e2222293feb4"
 
       def install
         bin.install "monad"
@@ -29,8 +29,8 @@ class Monad < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bkeane/monad/releases/download/v0.0.11/monad_Linux_x86_64.tar.gz"
-        sha256 "2a405a1ffc4275bd08f9e5a9c634c837c358f25dd46857019dd0612ec1dc80aa"
+        url "https://github.com/bkeane/monad/releases/download/v0.0.14/monad_Linux_x86_64.tar.gz"
+        sha256 "ac6d8d9e5456d8130d67d86beed806888f8b95431d93d1026b6df8322f0c08fc"
 
         def install
           bin.install "monad"
@@ -39,8 +39,8 @@ class Monad < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bkeane/monad/releases/download/v0.0.11/monad_Linux_arm64.tar.gz"
-        sha256 "829ee4bfae7204514158a5cb89ca13fe56021548107fad432b17f39f24bf0778"
+        url "https://github.com/bkeane/monad/releases/download/v0.0.14/monad_Linux_arm64.tar.gz"
+        sha256 "c21a17bc80ffe6ed583c601cad9b6992a3ecc7cfb972d79887ded6feec57018c"
 
         def install
           bin.install "monad"
