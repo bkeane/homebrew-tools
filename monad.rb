@@ -5,20 +5,20 @@
 class Monad < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bkeane/monad/releases/download/v0.1.1/monad_Darwin_x86_64.tar.gz"
-      sha256 "85e686434d0a87721ecc089a0de1c66cb920d98d9d51c24302d1bc6c0538d6e0"
+      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Darwin_x86_64.tar.gz"
+      sha256 "bd50d6e062754a81f7c93bc8c086817e66a79a8f4bbcb2d45fdd5e99cff0659e"
 
       def install
         bin.install "monad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bkeane/monad/releases/download/v0.1.1/monad_Darwin_arm64.tar.gz"
-      sha256 "669b2e34fdaa9a145148661da1798d19f532b7b2efdd3dc83f093d5e0c2dc3aa"
+      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Darwin_arm64.tar.gz"
+      sha256 "4d2f3af2c0f9d4d3e5a2d7ccbe38f60014f87906f260821ec5bf1dc5403b5c2f"
 
       def install
         bin.install "monad"
@@ -27,24 +27,18 @@ class Monad < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/bkeane/monad/releases/download/v0.1.1/monad_Linux_x86_64.tar.gz"
-        sha256 "13dc50717f93aa00c3fd7bb4cbd4bf3e648e07d0493430bff76abcaef9f48d3d"
-
-        def install
-          bin.install "monad"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Linux_x86_64.tar.gz"
+      sha256 "dfc53918f333e887706a6f3e5b26c3e251de7b84a7666fc0be87283983858155"
+      def install
+        bin.install "monad"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/bkeane/monad/releases/download/v0.1.1/monad_Linux_arm64.tar.gz"
-        sha256 "78a48f0ff3114aa8e0702dd36aabcc8805e07c8063122db7bb905b8fe71a0064"
-
-        def install
-          bin.install "monad"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Linux_arm64.tar.gz"
+      sha256 "3764dcfd37ff17a24920d45e977f0c1cd80cf4d122a148a379f79204a5ffbea9"
+      def install
+        bin.install "monad"
       end
     end
   end
