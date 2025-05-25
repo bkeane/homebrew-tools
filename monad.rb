@@ -5,20 +5,20 @@
 class Monad < Formula
   desc ""
   homepage ""
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Darwin_x86_64.tar.gz"
-      sha256 "bd50d6e062754a81f7c93bc8c086817e66a79a8f4bbcb2d45fdd5e99cff0659e"
+      url "https://github.com/bkeane/monad/releases/download/v0.1.3/monad_Darwin_x86_64.tar.gz"
+      sha256 "a11c338f0db95ad71a90d467d5af374a7b8193f2e3d768785832aa7342926176"
 
       def install
         bin.install "monad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Darwin_arm64.tar.gz"
-      sha256 "4d2f3af2c0f9d4d3e5a2d7ccbe38f60014f87906f260821ec5bf1dc5403b5c2f"
+      url "https://github.com/bkeane/monad/releases/download/v0.1.3/monad_Darwin_arm64.tar.gz"
+      sha256 "0abbeb44f71d949bf245c2cbc9a2355641c7201100daeeb0125adda0133fd919"
 
       def install
         bin.install "monad"
@@ -28,15 +28,15 @@ class Monad < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Linux_x86_64.tar.gz"
-      sha256 "dfc53918f333e887706a6f3e5b26c3e251de7b84a7666fc0be87283983858155"
+      url "https://github.com/bkeane/monad/releases/download/v0.1.3/monad_Linux_x86_64.tar.gz"
+      sha256 "a98dd51332a1a47200459ef0e1ecac2e8360704c68ac0c7c82d1f723d3acc691"
       def install
         bin.install "monad"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/bkeane/monad/releases/download/v0.1.2/monad_Linux_arm64.tar.gz"
-      sha256 "3764dcfd37ff17a24920d45e977f0c1cd80cf4d122a148a379f79204a5ffbea9"
+      url "https://github.com/bkeane/monad/releases/download/v0.1.3/monad_Linux_arm64.tar.gz"
+      sha256 "45203f071fe6011cac8440dbfce1f9a902e1af69c1f68c03fb098dd2c2f4ca6e"
       def install
         bin.install "monad"
       end
