@@ -1,5 +1,6 @@
 
 ```shell
+# Shell
 brew tap bkeane/tools
 brew install bkeane/tools/monad
 ```
